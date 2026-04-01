@@ -4,6 +4,7 @@ A project I started in November 2016 to learn how to code — by controlling a *
 
 > This repository is structured to show my learning journey, from the very first commit to a modern React + Three.js application.
 
+![robotic_arm](src/robotic_arm.jpg)
 ---
 
 ## Project Structure
