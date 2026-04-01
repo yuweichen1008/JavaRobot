@@ -1,0 +1,50 @@
+.panel {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 8px 16px;
+  background: #010409;
+  border-top: 1px solid #21262d;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #8b949e;
+  flex-wrap: wrap;
+}
+
+.posRow { display: flex; gap: 16px; flex-wrap: wrap; }
+.posItem { display: flex; gap: 4px; align-items: baseline; color: #c9d1d9; }
+.axis { color: #58a6ff; font-weight: 700; margin-right: 2px; }
+
+.flags { display: flex; gap: 8px; margin-left: auto; }
+.flag {
+  padding: 2px 8px;
+  border-radius: 10px;
+  background: #21262d;
+  color: #6e7681;
+  font-size: 11px;
+  font-weight: 600;
+}
+.flagOn     { background: #0e3320; color: #2ea043; }
+.flagMoving { background: #0d1f40; color: #58a6ff; animation: blink 1s ease-in-out infinite; }
+
+@keyframes blink { 0%,100% { opacity: 1; } 50% { opacity: 0.4; } }
+
+.alert {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #3a0f0f;
+  color: #f85149;
+  padding: 4px 12px;
+  border-radius: 6px;
+  border: 1px solid #f8514940;
+}
+.alertReset {
+  background: none;
+  border: 1px solid #f85149;
+  color: #f85149;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 11px;
+}

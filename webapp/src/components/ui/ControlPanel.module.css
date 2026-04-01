@@ -1,0 +1,84 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  background: #0d1117;
+  color: #c9d1d9;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  font-size: 13px;
+  height: 100%;
+  overflow-y: auto;
+  border-left: 1px solid #21262d;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #21262d;
+  font-weight: 600;
+}
+
+.dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+.dotOn  { background: #2ea043; box-shadow: 0 0 6px #2ea043; }
+.dotOff { background: #6e7681; }
+
+.modeTag {
+  margin-left: auto;
+  background: #1f6feb;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 11px;
+}
+
+.section { display: flex; flex-direction: column; gap: 8px; }
+.sectionTitle { color: #8b949e; font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em; }
+
+.servoRow { display: flex; gap: 8px; }
+
+.sliderRow {
+  display: grid;
+  grid-template-columns: 24px 1fr 56px;
+  align-items: center;
+  gap: 8px;
+}
+.sliderLabel { color: #8b949e; }
+.sliderValue { text-align: right; color: #58a6ff; font-size: 12px; }
+
+.slider {
+  width: 100%;
+  accent-color: #1f6feb;
+  cursor: pointer;
+}
+
+.btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background: #21262d;
+  color: #c9d1d9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  transition: background 0.15s;
+}
+.btn:hover { background: #30363d; }
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+.btnPrimary { border-color: #2ea043; color: #2ea043; }
+.btnPrimary:hover { background: #0e3320; }
+.btnDanger  { border-color: #f85149; color: #f85149; }
+.btnDanger:hover  { background: #3a0f0f; }
+
+.btnSend {
+  background: #1f6feb;
+  border-color: #1f6feb;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+}
+.btnSend:hover:not(:disabled) { background: #388bfd; }

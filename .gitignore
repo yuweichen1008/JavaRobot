@@ -1,3 +1,18 @@
-"*.class" 
+# Java
+*.class
 *.jar
 /.metadata/
+core/target/
+
+# Node
+node_modules/
+server/node_modules/
+server/dist/
+webapp/node_modules/
+webapp/dist/
+
+# Misc
+.DS_Store
+*.log
+.env
+.env.local
